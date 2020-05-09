@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Notatki</title>
+  </head>
+
+  <body class="body">
+    <header>
+      <nav>
+        <a href="index.html" class="menu-link">Strona główna</a>
+        <a href="notes.html" class="menu-link">Notatki</a>
+        <a href="plans.html" class="menu-link">Plany i przemyślenia</a>
+      </nav>
+    </header>
+
+    <main class="main">
+      <header class="main-header">
+        <h1>Notatki</h1>
+      </header>
+
+      <section class="section">
+        <header>
+          <h2>WTF: Co ten frontend</h2>
+          <img
+            class="wtf-logo"
+            src="images/wtf-co-ten-frontend.JPG"
+            alt="WTF Co ten frontend"
+          />
+          <p>
+            W tej sekcji na bieżąco będę zapisywał notatki ze szkolenia WTF.
+            Postanowiłem notować jedynie rzeczy dla mnie nowe (albo takie które
+            znałem, ale dotychczas źle wykorzystywałem), tak żebym w razie
+            konieczności powtórki, mógł tutaj zajrzeć i szybko odświeżyć swoją
+            wiedzę.
+          </p>
+        </header>
+        <article class="article">
+          <h3>Tydzień 1</h3>
+          <ul>
+            <li>
+              <b>Slack</b> – słyszałem o nim wcześniej, ale nigdy na poważnie
+              nie używałem. Okazuje się, że to całkiem fajne narzędzie do
+              codziennej pracy.
+            </li>
+            <li>
+              <b>Ścieżka rozwoju</b> – bardzo często o tym myślałem (co jeszcze
+              powinienem się nauczyć, w którą stronę pójść), a tutaj znalazem do
+              tego fajną stronę:
+              <a href="https://roadmap.sh/" target="_blank">ścieżka rozwoju</a>
+            </li>
+          </ul>
+        </article>
+        <article class="article">
+          <h3>Tydzień 2</h3>
+          <ul>
+            <li>
+              <b>Semantyczny HTML</b> – dowiedziałem się, że pisanie HTML nie
+              jest wcale łatwe, a pisanie dobrego HTML’a to sztuka. Semantyczny
+              HTML oznacza HTML mający znaczenie. W tym przypadku bardzo ważne
+              jest wykorzystywanie takich znaczników, które nadają odpowiednie
+              znaczenie „swojej wewnętrznej treści”.
+              <ul>
+                <li>
+                  main – główna część dokumentu (pliku HTML)
+                </li>
+                <li>
+                  section – sekcja dokumentu (tutaj, np. „Notatki z WTF…”)
+                </li>
+                <li>
+                  article – samodzielne treści (tutaj, np. pojedynczy tydzień)
+                </li>
+                <li>header – nagłówek - dokumentu / sekcji / artykułu</li>
+                <li>footer – stopka - dokumentu / sekcji</li>
+                <li>
+                  h1 … h6 – tekstowe nagłówki tytułowe - dokumentu / sekcji
+                </li>
+                <li>p – paragraf / akapit</li>
+              </ul>
+            </li>
+            <li>
+              <b>Walidator kodu HTML</b> – okazuje się, że poprawność pisanego
+              HTML można łatwo sprawdzić pod tym adresem:
+              <a href="https://validator.w3.org/nu/#textarea" target="_blank"
+                >sprawdź poprawność HTML</a
+              >
+            </li>
+            <li>
+              <a href="https://www.w3.org/TR/html52/" target="_blank"
+                ><b>Dokumentacja HTML’a</b></a
+              >
+            </li>
+          </ul>
+        </article>
+        <article class="article">
+          <h3>Tydzień 3</h3>
+          <ul>
+            <li>
+              <b>Kanban</b> – metodologia kanban, polega na planowaniu i
+              organizowaniu wykonywanych czynności, z podziałem na listę zadań
+              do wykonania, aktualnie wykonywanych i zadań wykonanych. Okazuje
+              się, ze nieświadomie od dawna wykorzystuje podobne schematy,
+              których zadanie jest takie samo, czyli usprawnić wykonywanie
+              różnych czynności, lepiej zorganizować czas w ciągu dnia itp.
+            </li>
+            <li>
+              <b>Trello</b> – wykorzystywałem kiedyś w projekcie na studiach,
+              jednak wtedy nie zauważyłem potencjału tego prostego narzędzia.
+              Pozwala tworzyć dowolną liczbę tablic, a w nich różnych kategorii
+              zadań – narzędzie m.in. metodologii kanban. Obecnie korzystam
+              „pełną parą” z potencjału tej prostej aplikacji :)
+            </li>
+            <li>
+              <b>Semantyczny HTML cd.</b>
+              <ul>
+                <li>
+                  br – nowa linia – nie stosujemy do „robienia dużych odstępów”
+                </li>
+                <li>
+                  b, i – wyróżnienie (jedynie wizualne) fragmentu z tekstu
+                  otaczającego, bez większego znaczenia semantycznego
+                </li>
+                <li>
+                  strong – pogrubienie tekstu, podkreśla wysoką istotność i
+                  poważność frazy w nim zawartej
+                </li>
+                <li>
+                  em – kursywa, tekst może mieć inne znaczenie (np. ironia)
+                </li>
+                <li>
+                  a <i>href, target</i> – linki zewnętrzne / łącza wewnątrz
+                  dokumentu (kotwice) – „opis „ powinien mieć określone
+                  znaczenie do czego prowadzi „przejdź do notatek” zamiast, np.
+                  „czytaj dalej” itp.
+                </li>
+                <li>
+                  img <i>src, alt</i> – zdjęcie, atrybut alt jest ważny nie
+                  tylko w przypadku nie odnalezienia zdjęcia w źródle, ale
+                  również dla czytników ekranowych
+                </li>
+              </ul>
+            </li>
+            <li><b>Nazwy plików</b> – kebab-case (małe litery z pauzami)</li>
+            <li>
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes"
+                target="_blank"
+                ><b>Atrybuty globalne</b></a
+              >
+            </li>
+            <li>
+              <b>CSS</b>
+              <ul>
+                <li>
+                  !important – <u>nie powinno się go używać!</u> „Psuje” całą
+                  „hierarchię” stylowania (specyficzność)
+                </li>
+                <li>
+                  Style inline – pisane w HTML,
+                  <u>nie powinno się ich używać!</u>
+                </li>
+                <li>
+                  Specyficzność – hierarchia stylowania, wygrywają style z
+                  najwyższą specyficznością, tzn. nadpisują pozostałe style. W
+                  przypadku remisu, aplikowane są style „bliżej” elementu
+                  (najpóźniej zdefiniowane)
+                </li>
+                <li>
+                  Klasy – zalecane do stylowania, bez zagnieżdżeń, pojedyncze,
+                  dobrze nazwane klasy per element (nie zwiększaj specyficzności
+                  bez potrzeby), klasa nawet do pojedynczego elementu danego
+                  typu
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <div class="css-specificity-image-wrapper">
+            <img
+              class="css-specificity-image"
+              src="images/specyficznosc.JPG"
+              alt="Specyficzność CSS"
+            />
+          </div>
+          <ul>
+            <li>
+              <b>Coolors.co</b> – narzędzie do łatwego tworzenia palet kolorów -
+              <a href="https://coolors.co/" target="_blank"
+                >stwórz paletę kolorów</a
+              >
+            </li>
+            <li>
+              <b>JavaScript</b>
+              <ul>
+                <li>
+                  Java != JavaScript
+                </li>
+                <li>
+                  EcmaSctipt – specyfikacja, z której czerpie JavaScript, (ES6+)
+                  = EcmaScript 2015+ to obowiązujący standard JS (nowy
+                  JavaScript), stale rozwijany (EcmaScript 2020) itp.
+                </li>
+                <li>
+                  Wartości – wartości dla JS, są tym czym liczby dla matematyki
+                </li>
+                <li>
+                  Operacje porównywania
+                </li>
+                <li>
+                  Literały – łączenie wartości ze zmiennymi w postaci jednego
+                  ciągu znaków
+                </li>
+                <li>
+                  Zmienne – zapisujemy jako camelCase
+                </li>
+                <li>
+                  Obiekty
+                </li>
+                <li>
+                  Funkcje
+                </li>
+                <li>
+                  script - znacznik dla kodu JS w HTML, zawsze na samym końcu
+                  (body /body), nie zalecane pisanie kodu JS w HTML’u
+                </li>
+                <li>
+                  Backtick / backquote (`) – „kopnięty apostrof” – służy do
+                  tworzenia literałów
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </article>
+      </section>
+    </main>
+    <footer>
+      Strona domowa Daniela Moskala, wszystkie treści są efektem udziału w
+      szkoleniu WTF :)
+    </footer>
+    <script src="main.js"></script>
+  </body>
+</html>
