@@ -1,6 +1,5 @@
 .body {
-  width: 80%;
-  margin: 20px auto;
+  margin: 0;
   background: rgb(136, 255, 192);
   background: radial-gradient(
     circle,
@@ -10,13 +9,28 @@
   );
 }
 
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1.5rem;
+  box-sizing: border-box;
+  background: rgb(136, 255, 192, 0.6);
+  z-index: 2000;
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+}
+
 .menu-link {
   text-transform: uppercase;
   margin-right: 10px;
 }
 
 .main {
-  margin-top: 40px;
+  margin: 0 auto;
+  margin-top: 100px;
+  width: 80%;
 }
 
 .main-header {
@@ -33,10 +47,10 @@
 }
 
 .article {
-    padding: 10px 30px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
-    border-radius: 5px;
-    margin-bottom: 30px;
+  padding: 10px 30px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  margin-bottom: 30px;
 }
 
 .wtf-logo {
@@ -52,4 +66,10 @@
 .css-specificity-image {
   width: 60%;
   border-radius: 20px;
+}
+
+.footer {
+  width: 100%;
+  padding: 0.5rem 1.5rem;
+  box-sizing: border-box;
 }
