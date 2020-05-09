@@ -64,7 +64,8 @@
 }
 
 .image-wrapper__image {
-  width: 60%;
+  max-width: 60%;
+  max-height: 500px;
   border-radius: 20px;
 }
 
