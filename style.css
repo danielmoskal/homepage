@@ -12,7 +12,6 @@
 .nav {
   position: fixed;
   top: 0;
-  left: 0;
   width: 100%;
   padding: 1.5rem;
   box-sizing: border-box;
@@ -20,6 +19,8 @@
   z-index: 2000;
   -webkit-backdrop-filter: blur(20px);
   backdrop-filter: blur(20px);
+  display: flex;
+  justify-content: space-around;
 }
 
 .nav__link {
