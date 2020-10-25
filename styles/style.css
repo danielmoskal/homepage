@@ -58,6 +58,7 @@ html {
 
 .main {
   margin: 0 auto;
+  margin-top: 80px;
   width: 90%;
 
   display: grid;
