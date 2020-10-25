@@ -4,3 +4,11 @@ if (remoteWriting){
 	remoteWriting.innerHTML = 'A niech to, JS faktycznie może wstawiać tekst do DOMu, ale czy to dobre podejscie?';
 	console.log(remoteWriting.innerHTML);
 }
+
+const menuBtn = document.querySelector('.header__menu--js');
+const navContainer = document.querySelector('.navigation--js');
+if (menuBtn) {
+	menuBtn.addEventListener('click', () => {
+		navContainer.classList.toggle("navigation--open");
+	});
+}
