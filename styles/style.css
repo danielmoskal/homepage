@@ -18,11 +18,16 @@ html {
   );
 }
 
+.header {
+  height: 64px;
+  margin-bottom: 16px;
+}
+
 .nav {
   position: fixed;
   top: 0;
   width: 100%;
-  padding: 1.5rem;
+  height: 64px;
   box-sizing: border-box;
   background: rgb(136, 255, 192, 0.6);
   z-index: 2000;
@@ -30,22 +35,31 @@ html {
   backdrop-filter: blur(20px);
   display: flex;
   justify-content: space-around;
+  align-items: center;
 }
 
 .nav__link {
   text-transform: uppercase;
-  margin-right: 16px;
 }
 
 .main {
   margin: 0 auto;
-  margin-top: 100px;
   width: 80%;
+
+  display: grid;
+  grid-template-areas: "header header header"
+  "main . aside";
+  grid-template-columns: 1fr 64px 200px;
 }
 
 .main__header {
   color: #00aa1c;
   text-transform: uppercase;
+  grid-area: header;
+}
+
+.main__content {
+  grid-area: main;
 }
 
 .section {
@@ -61,6 +75,15 @@ html {
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
   border-radius: 5px;
   margin-bottom: 30px;
+}
+
+.aside {
+  grid-area: aside;
+  padding: 10px 16px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  margin-bottom: 30px;
+  background: #ffffff;
 }
 
 .wtf-header__logo {
