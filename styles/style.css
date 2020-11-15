@@ -99,6 +99,26 @@ html {
   margin-bottom: 30px;
 }
 
+.article__heading::before {
+  content: "";
+  display: inline-block;
+  height: 12px;
+  width: 12px;
+  margin-right: 4px;
+  background-color: red;
+  border-radius: 50%;
+}
+
+.article__heading::after {
+  content: "";
+  display: inline-block;
+  height: 12px;
+  width: 12px;
+  margin-left: 4px;
+  background-color: red;
+  border-radius: 50%;
+}
+
 .aside {
   grid-area: aside;
   padding: 10px 16px;
