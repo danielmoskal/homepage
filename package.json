@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "cow": "cowsay -g Hello world",
+    "sass": "node-sass styles/scss/style.scss -w styles/style.css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
