@@ -4,6 +4,7 @@
   "description": "Home page project",
   "main": "index.js",
   "scripts": {
+    "cow": "cowsay -g Hello world",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -18,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/danielmoskal/homepage/issues"
   },
-  "homepage": "https://github.com/danielmoskal/homepage#readme"
+  "homepage": "https://github.com/danielmoskal/homepage#readme",
+  "devDependencies": {
+    "cowsay": "^1.4.0"
+  }
 }
