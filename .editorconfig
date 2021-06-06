@@ -1,15 +1,47 @@
 # Editor configuration, see https://editorconfig.org
 root = true
 
-[*]
+[*.{js,ts}]
+end_of_line = lf
+charset = utf-8
+indent_style = tab
+indent_size = 4
+insert_final_newline = true
+trim_trailing_whitespace = true
+insert_final_newline = true
+
+[{*.less,*.css}]
+end_of_line = lf
+charset = utf-8
+indent_style = tab
+indent_size = 4
+trim_trailing_whitespace = true
+
+[*.html]
+end_of_line = lf
+charset = utf-8
+indent_style = tab
+indent_size = 4
+trim_trailing_whitespace = true
+
+[*.xml]
+end_of_line = lf
+charset = utf-8
+indent_style = tab
+indent_size = 4
+trim_trailing_whitespace = true
+
+[*.json]
+end_of_line = lf
+charset = utf-8
+indent_style = tab
+indent_size = 4
+
+[{*.yml,*.yaml}]
+end_of_line = lf
 charset = utf-8
 indent_style = space
 indent_size = 2
-insert_final_newline = true
-trim_trailing_whitespace = true
-
-[*.ts]
-quote_type = single
 
 [*.md]
 max_line_length = off

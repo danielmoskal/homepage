@@ -3,10 +3,11 @@ import { Routes, RouterModule } from '@angular/router';
 import { PortfolioRoutingModule } from './portfolio.module';
 
 const routes: Routes = [
-  {
-    path: 'portfolio',
-    loadChildren: (): Promise<PortfolioRoutingModule> => import('./portfolio.module').then((m) => m.PortfolioRoutingModule),
-  }
+	{
+		path: 'portfolio',
+		loadChildren: (): Promise<PortfolioRoutingModule> =>
+			import('./portfolio.module').then((m) => m.PortfolioRoutingModule),
+	},
 ];
 
 @NgModule({
