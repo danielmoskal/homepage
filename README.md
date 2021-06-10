@@ -23,5 +23,5 @@
 
 
 
-# DEMO
+# DEMO (Work in progress..)
 https://danielmoskal.github.io/homepage/
