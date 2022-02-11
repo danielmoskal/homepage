@@ -23,6 +23,6 @@
   "homepage": "https://github.com/danielmoskal/homepage#readme",
   "devDependencies": {
     "cowsay": "^1.4.0",
-    "node-sass": "^5.0.0"
+    "node-sass": "^7.0.0"
   }
 }
